@@ -8,7 +8,7 @@ public class Postgres {
     private Connection conn;
 
     public Postgres() {
-        String url = "jdbc:postgresql://s1.itfakultetet.no/brreg";
+        String url = "jdbc:postgresql://itfakultetet.no/brreg";
         Properties props = new Properties();
         props.setProperty("user", "kurs");
         props.setProperty("password", "kurs123");
