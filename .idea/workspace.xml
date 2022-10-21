@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3885626b-db10-475d-8ad3-ba6c7b42abff" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/no/itfakultetet/Postgres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/itfakultetet/Postgres.java" afterDir="false" />
-    </list>
+    <list default="true" id="3885626b-db10-475d-8ad3-ba6c7b42abff" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +74,13 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1666367632932</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="DB til Excel Test">
+      <created>1666367925903</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1666367925903</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
