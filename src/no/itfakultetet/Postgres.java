@@ -1,7 +1,11 @@
 package no.itfakultetet;
 
+import java.io.IOException;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
+import java.util.Scanner;
 
 public class Postgres {
 
@@ -24,28 +28,48 @@ public class Postgres {
 
     public void getData(String navn) {
 
+        List<String> firmaListe = new ArrayList<>();
+
         Statement st;
         int i = 0;
-        System.out.println("Orgnummer\tNavn");
+        System.out.println("Orgnummer\tNavn\tAnsatte");
         System.out.println("-----------------------------------------");
 
         try {
             st = conn.createStatement();
-            ResultSet rs = st.executeQuery("SELECT orgnr, navn FROM enheter WHERE navn ilike '" + navn + "%'");
+            ResultSet rs = st.executeQuery("SELECT orgnr, navn, ansatte_antall FROM enheter WHERE navn ilike '" + navn + "%'");
             while (rs.next()) {
-                System.out.println(rs.getString("orgnr") + "\t" + rs.getString("navn"));
+                String firmaStreng = rs.getString("orgnr") + "\t" + rs.getString("navn") + "\t" + rs.getString("ansatte_antall");
+                firmaListe.add(firmaStreng);
+                System.out.println(firmaStreng);
                 i++;
             }
 
-            System.out.println("Antall bedrifter funnet: "+i);
+            System.out.println("Antall bedrifter funnet: " + i);
             rs.close();
             st.close();
+            lagreData(firmaListe);
 
         } catch (SQLException e) {
             e.printStackTrace();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
 
     }
+        public void lagreData(List<String> firmaListe) throws IOException {
+
+            Scanner lagre = new Scanner(System.in);
+            System.out.println("1. Lagre som csv-fil   2. Lagre som Excel-fil");
+            String lagreSom = lagre.nextLine();
+            if (lagreSom.equals("1")) {
+                CSV.lagreTilCsv(firmaListe);
+            } else if (lagreSom.equals("2")) {
+                Excel.lagreTilExcel(firmaListe);
+            }
+        }
+
+
 
 
 }
