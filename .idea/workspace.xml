@@ -7,23 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3885626b-db10-475d-8ad3-ba6c7b42abff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/pg_excel_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/apache_log4j_2_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/apache_log4j_2_19__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/auxiliary.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/log4j_core_2_19_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/ooxml_lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/poi_bin_5_2__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jpackage.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log4j-core-2.19.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/no/itfakultetet/CSV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/pg_excell_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/pg_excel_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/pg_excel_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pg_excell.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pg_excel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/no/itfakultetet/Excell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/itfakultetet/Excel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/no/itfakultetet/Postgres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/itfakultetet/Postgres.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpackage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/jpackage.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +64,7 @@
       <recent name="C:\Users\terje\utvikling\java\pg_excell" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="JAR Application.pg_excel.jar (1)">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="no.itfakultetet.App" />
       <module name="pg_excel" />
@@ -90,6 +77,14 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="pg_excel.jar (1)" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/pg_excel_jar/pg_excel.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pg_excel.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/pg_excel.jar" />
+      <method v="2" />
     </configuration>
     <configuration name="pg_excell.jar" type="JarApplication" temporary="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/pg_excell_jar/pg_excell.jar" />
@@ -110,6 +105,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.pg_excel.jar (1)" />
+        <item itemvalue="JAR Application.pg_excel.jar" />
         <item itemvalue="Application.App" />
         <item itemvalue="JAR Application.pg_excell.jar" />
       </list>
@@ -142,7 +139,13 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1666368351220</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="DB til Excel Test">
+      <created>1666569214571</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1666569214571</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
