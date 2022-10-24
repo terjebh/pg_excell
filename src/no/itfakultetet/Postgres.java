@@ -41,7 +41,6 @@ public class Postgres {
             while (rs.next()) {
                 String firmaStreng = rs.getString("orgnr") + "\t" + rs.getString("navn") + "\t" + rs.getString("ansatte_antall");
                 firmaListe.add(firmaStreng);
-                System.out.println(firmaStreng);
                 i++;
             }
 

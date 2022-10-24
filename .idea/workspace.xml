@@ -7,10 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3885626b-db10-475d-8ad3-ba6c7b42abff" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/pg_excel_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/pg_excel_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpackage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/jpackage.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/no/itfakultetet/Postgres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/itfakultetet/Postgres.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +62,7 @@
       <recent name="C:\Users\terje\utvikling\java\pg_excell" />
     </key>
   </component>
-  <component name="RunManager" selected="JAR Application.pg_excel.jar (1)">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="no.itfakultetet.App" />
       <module name="pg_excel" />
@@ -145,7 +143,13 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1666569214571</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="DB til Excel Test">
+      <created>1666570252883</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1666570252883</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
