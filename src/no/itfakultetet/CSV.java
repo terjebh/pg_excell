@@ -9,8 +9,8 @@ import java.nio.file.StandardOpenOption;
 import java.util.List;
 
 public class CSV {
-    public static void lagreTilCsv(List<String> firmaListe) {
-        try ( BufferedWriter fil = Files.newBufferedWriter(Paths.get("firma.csv"), StandardCharsets.UTF_8, StandardOpenOption.CREATE)) {
+    public static void lagreTilCsv(List<String> firmaListe, String navn) {
+        try ( BufferedWriter fil = Files.newBufferedWriter(Paths.get(navn+".csv"), StandardCharsets.UTF_8, StandardOpenOption.CREATE)) {
 
             fil.append("Orgnummer\tFirmanavn\tAnsatte\n");
             firmaListe.forEach(a -> {
@@ -21,7 +21,7 @@ public class CSV {
                 }
             });
             fil.flush();
-            System.out.println("Filen: firma.csv er lagret.");
+            System.out.println(navn+".csv er lagret.");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

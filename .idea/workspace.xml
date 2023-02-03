@@ -5,9 +5,14 @@
       <artifact name="pg_excell:jar" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3885626b-db10-475d-8ad3-ba6c7b42abff" name="Changes" comment="">
+    <list default="true" id="3885626b-db10-475d-8ad3-ba6c7b42abff" name="Changes" comment="DB til Excel Test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/no/itfakultetet/CSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/itfakultetet/CSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/no/itfakultetet/Excel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/itfakultetet/Excel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/no/itfakultetet/Postgres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/itfakultetet/Postgres.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,24 +93,11 @@
       <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/pg_excell_jar/pg_excell.jar" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="pg_excel" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="pg_excel" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="JAR Application.pg_excel.jar (1)" />
         <item itemvalue="JAR Application.pg_excel.jar" />
-        <item itemvalue="Application.App" />
         <item itemvalue="JAR Application.pg_excell.jar" />
       </list>
     </recent_temporary>
@@ -143,14 +135,19 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1666569214571</updated>
     </task>
-    <task id="LOCAL−00005" summary="DB til Excel Test">
-      <created>1666570252883</created>
-      <option name="number" value="LOCAL−00005" />
-      <option name="presentableId" value="LOCAL−00005" />
-      <updated>1666570252883</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="DB til Excel Test" />

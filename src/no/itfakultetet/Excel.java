@@ -18,10 +18,10 @@ public class Excel {
     /**
      * Metode for å eksportere til Excel
      */
-    public static void lagreTilExcel(List<String> firmaListe) throws IOException {
+    public static void lagreTilExcel(List<String> firmaListe, String navn ) throws IOException {
         Workbook wb = new HSSFWorkbook();
         // Ark med Firmadetaljer
-        Sheet ark1 = wb.createSheet("Firma");
+        Sheet ark1 = wb.createSheet(navn);
         CreationHelper createHelper = wb.getCreationHelper();
         Row head = ark1.createRow(0);
         head.createCell(0).setCellValue(createHelper.createRichTextString("Orgnummer"));
@@ -39,9 +39,9 @@ public class Excel {
         });
 
 
-        try (OutputStream fileOut = new FileOutputStream("firma.xls")) {
+        try (OutputStream fileOut = new FileOutputStream(navn+".xls")) {
             wb.write(fileOut);
-            System.out.println("firma.xsl er lagret.");
+            System.out.println(navn+".xsl er lagret.");
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {

@@ -40,6 +40,7 @@ public class Postgres {
             ResultSet rs = st.executeQuery("SELECT orgnr, navn, ansatte_antall FROM enheter WHERE navn ilike '" + navn + "%'");
             while (rs.next()) {
                 String firmaStreng = rs.getString("orgnr") + "\t" + rs.getString("navn") + "\t" + rs.getString("ansatte_antall");
+                System.out.println(firmaStreng);
                 firmaListe.add(firmaStreng);
                 i++;
             }
@@ -47,7 +48,7 @@ public class Postgres {
             System.out.println("Antall bedrifter funnet: " + i);
             rs.close();
             st.close();
-            lagreData(firmaListe);
+            lagreData(firmaListe, navn);
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -56,15 +57,15 @@ public class Postgres {
         }
 
     }
-        public void lagreData(List<String> firmaListe) throws IOException {
+        public void lagreData(List<String> firmaListe, String navn) throws IOException {
 
             Scanner lagre = new Scanner(System.in);
             System.out.println("1. Lagre som csv-fil   2. Lagre som Excel-fil");
             String lagreSom = lagre.nextLine();
             if (lagreSom.equals("1")) {
-                CSV.lagreTilCsv(firmaListe);
+                CSV.lagreTilCsv(firmaListe,navn);
             } else if (lagreSom.equals("2")) {
-                Excel.lagreTilExcel(firmaListe);
+                Excel.lagreTilExcel(firmaListe, navn);
             }
         }
 
